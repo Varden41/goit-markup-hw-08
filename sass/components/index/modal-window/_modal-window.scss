@@ -1,0 +1,213 @@
+/* Modal window */
+
+.modal-window {
+    width: 528px;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: $background-color;
+}
+
+.modal-window__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: $background-color;
+}
+
+.modal-window__close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: $button-bg-color;
+    }
+}
+
+
+
+.modal-window__title {
+    margin-bottom: 12px;
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.48px;
+}
+
+.modal-window__label {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.modal-window__input-box {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    &:focus-within {
+        fill: $button-bg-color;
+    }
+}
+
+.modal-window__input {
+    width: 100%;
+    height: 100%;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: border-color;
+    outline: none;
+    &:focus {
+        border-color: $button-bg-color;
+    }
+}
+
+
+
+.modal-window__icon {
+    position: absolute;
+    left: 12px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill;
+    color: $title-text-color;
+}
+
+.modal-window__input-box--comments {
+    min-height: 120px;
+    margin-bottom: 20px;
+}
+
+.modal-window__comments {
+    resize: none;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 100%;
+    outline: none;
+    padding: 12px 16px;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: border-color;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    &:focus {
+        border-color: $button-bg-color;
+    }
+}
+
+
+
+
+/* Checkbox  */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+    cursor: pointer;
+    margin-inline: auto;
+}
+
+.checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox__icon {
+    border: 2px solid $title-text-color;
+    border-radius: 4px;
+    margin-right: 8px;
+    fill: $background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    .checkbox__input:checked + & {
+        background-color: $accent-text-color;
+        border: none;
+        background-origin: border-box;
+    }
+        .checkbox__input:focus + & {
+            border-color: #188CE8;
+        }
+}
+
+.checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.checkbox__link {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    color: var(--button-bg-color);
+}
+
+/* Modal Button */
+
+.modal-window__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    min-height: 50px;
+    margin-top: 30px;
+    margin-inline: auto;
+    margin-bottom: 0;
+
+    background-color: $button-bg-color;
+    color: $additionat-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    &:hover,
+    &:focus {
+        background-color: $primary-botton-hover;
+    }
+}
