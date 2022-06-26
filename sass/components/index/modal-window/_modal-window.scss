@@ -52,7 +52,8 @@
     color: $title-text-color;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    // line-height: 1.15;
     text-align: center;
     letter-spacing: 0.48px;
 }
@@ -60,7 +61,7 @@
 .modal-window__label {
     display: block;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 }
@@ -124,11 +125,16 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    // font-size: 12px;
+    // line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     &:focus {
         border-color: $button-bg-color;
+    }
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
     }
 }
 
@@ -147,7 +153,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 425px;
+    // width: 425px;
     cursor: pointer;
     margin-inline: auto;
 }
@@ -159,6 +165,8 @@
 }
 
 .checkbox__icon {
+    flex-shrink: 0;
+
     border: 2px solid $title-text-color;
     border-radius: 4px;
     margin-right: 8px;
@@ -177,17 +185,20 @@
 }
 
 .checkbox__text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
 .checkbox__link {
-    font-size: 14px;
+    font-size: 12px;
+    // font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: underline;
-    color: var(--button-bg-color);
+    color: $button-bg-color;
 }
 
 /* Modal Button */

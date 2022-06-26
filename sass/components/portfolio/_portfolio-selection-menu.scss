@@ -1,20 +1,30 @@
 .projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .projects__filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    // justify-content: center;
+    // margin-bottom: 50px;
     list-style: none;
+    row-gap: 15px;
+    column-gap: 8px;
+    margin-bottom: 40px;
 }
 
-.projects__filter-item {
-    &:not(:last-child) {
-        margin-right: 8px;
-    }
-}
+// .projects__filter-item {
+//     &:not(:last-child) {
+//         margin-right: 8px;
+//     }
+// }
 
 .projects__filter-button {
     border: none;

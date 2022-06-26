@@ -32,22 +32,16 @@
     //     }
 }
 .container--head-box {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    @media screen and (min-width: 480px) {
-            height: 400px;
-            padding-top: 118px;
-            padding-bottom: 118px;
-        }
+    // padding-top: 200px;
+    // padding-bottom: 200px;
         
-        @media screen and (min-width: 768px) {
-            height: 400px;
+        @media screen and (max-width: 1199px) {
             padding-top: 118px;
             padding-bottom: 118px;
         }
         
         @media screen and (min-width: 1200px) {
-            height: 600px;
+            // height: 600px;
             padding-top: 200px;
             padding-bottom: 200px;
         }
