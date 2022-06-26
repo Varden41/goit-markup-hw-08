@@ -11,20 +11,22 @@
 .clients__title {
     color: $title-text-color;
     // margin-bottom: 50px;
-        @media screen and (max-width: 1199px) {
-                margin-bottom: 30px;
-            }
-        
-        @media screen and (min-width: 1200px) {
-                margin-bottom: 50px;
-            }
+
 
     font-weight: 700;
-    font-size: 24px;
-    line-height: 1.4;
-    // font-size: 36px;
-    // line-height: 42px;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+            
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .clients__list {
@@ -32,7 +34,7 @@
     flex-wrap: wrap;
 
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -41,6 +43,12 @@
     height: 92px;
     // width: 170px;
     // height: 92px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .clients__link {

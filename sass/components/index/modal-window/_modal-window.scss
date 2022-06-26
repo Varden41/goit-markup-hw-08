@@ -1,8 +1,7 @@
 /* Modal window */
 
 .modal-window {
-    max-width: 450px;
-    width: calc(100% - 30px);
+    width: 450px;
     position: absolute;
     padding: 40px;
     top: 50%;
@@ -53,9 +52,11 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
-    // line-height: 1.15;
     text-align: center;
     letter-spacing: 0.48px;
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal-window__label {
@@ -136,6 +137,10 @@
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
     }
+     @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 1.17;
+     }
 }
 
 
@@ -187,18 +192,23 @@
 .checkbox__text {
     font-size: 12px;
     line-height: 1.17;
-    // font-size: 14px;
-    // line-height: 1.71;
     letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .checkbox__link {
     font-size: 12px;
-    // font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: $button-bg-color;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 /* Modal Button */

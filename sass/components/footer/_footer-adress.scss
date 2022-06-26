@@ -10,20 +10,34 @@
     // align-items: baseline;
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
         align-items: baseline;
+        flex-wrap: nowrap;
     }
 }
 
 .adress-footer {
     width: 231px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 60px;
-    
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        display: block;
     }
 }
 
@@ -37,13 +51,15 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
-    // font-size: 26px;
-    // line-height: 1.19;
+   
     @media screen and (max-width: 1199px) {
         text-align: center;
 
     }
-
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .adress-footer--logo-secondary {
