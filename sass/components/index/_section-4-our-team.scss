@@ -1,22 +1,37 @@
 .our-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     background-color: $our-team-bg-color;
 }
 
 .our-team__title {
     color: $title-text-color;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .our-team__list {
-    display: flex;
+    // display: flex;
     list-style: none;
 }
 
@@ -25,18 +40,27 @@
     border-radius: 0px 0px 4px 4px;
 
     background-color: $background-color;
+
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
+    
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
 }
 
 .our-team__image {
     display: block;
+    width:calc(100vw - 30px);
+    max-width: 450px;
+    height: 460px;
 }
 
 .our-team__teammate-box {
     padding-top: 30px;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
+    padding-bottom: 24px;
     text-align: center;
 }
 

@@ -6,12 +6,25 @@
 }
 
 .container--footer-main {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .adress-footer {
     width: 231px;
+
+    @media screen and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    
+    }
 }
 
 .adress-footer__logo {
@@ -24,6 +37,10 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+
+    }
 
 }
 
@@ -37,6 +54,10 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+
+    }
 }
 
 .adress-footer__text {
@@ -45,8 +66,15 @@
 
 .adress-footer__list {
     list-style: none;
-    &:last-child {
-        margin-bottom: 9px;
+    // &:last-child {
+    //     margin-bottom: 9px;
+    // }
+
+}
+.adress-footer__item {
+    list-style: none; 
+        &:first-child {
+        margin-bottom: 8px;
     }
 }
 
