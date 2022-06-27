@@ -18,9 +18,12 @@
 
 }
 .header-nav__navigation-item {
-    &:not(:last-child) {
-        margin-right: 50px;
+    @media screen and (min-width: $tablet) {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
     }
+
     
     @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -31,8 +34,11 @@
 
 .header-nav__navigation_link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
