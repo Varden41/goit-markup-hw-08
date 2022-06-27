@@ -13,23 +13,6 @@
     background-color: $background-color-special ;
     text-align: center;
 
-    // @media screen and (min-width: 480px) {
-    //         height: 400px;
-    //         padding-top: 118px;
-    //         padding-bottom: 118px;
-    //     }
-    
-    //     @media screen and (min-width: 768px) {
-    //         height: 400px;
-    //         padding-top: 118px;
-    //         padding-bottom: 118px;
-    //     }
-    
-    //     @media screen and (min-width: 1200px) {
-    //         height: 600px;
-    //         padding-top: 200px;
-    //         padding-bottom: 200px;
-    //     }
 }
 .container--head-box {
     // padding-top: 200px;
@@ -40,7 +23,7 @@
             padding-bottom: 118px;
         }
         
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             // height: 600px;
             padding-top: 200px;
             padding-bottom: 200px;
@@ -62,7 +45,7 @@
         font-size: 26px;
         line-height: 1.62;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 44px;
         line-height: 1.36;
     }

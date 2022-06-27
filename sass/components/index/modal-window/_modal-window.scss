@@ -15,7 +15,7 @@
     border-radius: 4px;
     background-color: $background-color;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 528px;
     }
 }
@@ -54,7 +54,7 @@
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.48px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         line-height: 1.15;
     }
 }
@@ -137,7 +137,7 @@
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
     }
-     @media screen and (min-width: 1200px) {
+     @media screen and (min-width: $desktop) {
         font-size: 12px;
         line-height: 1.17;
      }
@@ -193,7 +193,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 1.71;
     }
@@ -205,7 +205,7 @@
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: $button-bg-color;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 1.71;
     }

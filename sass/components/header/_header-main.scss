@@ -1,5 +1,8 @@
 .header {
     border-bottom: 1px solid $bottom-border-header;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .container--nav {
@@ -12,15 +15,21 @@
     align-items: center;
 }
 
-.header-nav__logo {
+.header__logo {
     color: $accent-text-color;
     font-family: $Secondaryfont;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
-.header-nav__logo--secondary {
+.header__logo--secondary {
     color: #000000;
 }
+
+

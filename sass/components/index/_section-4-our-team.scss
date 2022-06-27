@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
         
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -20,7 +20,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.17;
@@ -32,7 +32,7 @@
     // flex-direction: column;
     list-style: none;
     row-gap: 30px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
@@ -53,11 +53,11 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: calc((100% - 30px) /2);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: calc((100% - 90px) / 4);
     }
 }
@@ -67,7 +67,7 @@
     width:calc(100vw - 30px);
     max-width: 450px;
     height: auto;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 100%;
     }
 }

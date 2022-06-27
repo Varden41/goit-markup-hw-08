@@ -16,7 +16,13 @@ body {
     color: $primary-text-color;
     font-family: $Primaryfont;
     letter-spacing: 0.03em;
+    
+    &.modal-open,
+    &.menu-open {
+        overflow: hidden;
+    }
 }
+
 
 .container {
     // width: 1200px;
@@ -25,15 +31,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     
-    @media screen and (min-width: 480px) {
-            width: 480px;
+    @media screen and (min-width: $mobile) {
+            width: $mobile;
         }
     
-    @media screen and (min-width: 768px) {
-            width: 768px;
+    @media screen and (min-width: $tablet) {
+            width: $tablet;
         }
     
-    @media screen and (min-width: 1200px) {
-            width: 1200px;
+    @media screen and (min-width: $desktop) {
+            width: $desktop;
         }
 }
