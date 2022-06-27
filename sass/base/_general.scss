@@ -16,9 +16,12 @@ body {
     color: $primary-text-color;
     font-family: $Primaryfont;
     letter-spacing: 0.03em;
-    
-    &.modal-open,
+    @media screen and (max-width: 767px) {
     &.menu-open {
+                overflow: hidden;
+            }
+    }
+    &.modal-open {
         overflow: hidden;
     }
 }

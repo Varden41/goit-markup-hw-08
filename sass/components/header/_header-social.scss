@@ -1,0 +1,27 @@
+.header-social {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+@media screen and (min-width: $tablet) {
+    display: none;
+}
+}
+.header-social__item {
+    &:not(:last-child) {
+       padding-right: 10px; 
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &:not(:first-child) {
+     padding-left: 10px;   
+    }
+    
+}
+.header-social__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-text-color;
+}
