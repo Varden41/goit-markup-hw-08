@@ -841,7 +841,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .adress-footer {
-    margin-right: 70px;
+    margin-right: 0;
     display: block;
   }
 }
@@ -924,6 +924,13 @@ body {
     margin-top: 5px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    margin-bottom: 0;
+    align-items: flex-start;
+    margin-left: 70px;
+  }
+}
 
 .footer-join__text {
   font-family: "Roboto";
@@ -979,11 +986,22 @@ body {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-top: 0;
+    margin-left: 93px;
+  }
+}
 
 .footer-subscribe__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__form {
+    align-items: flex-start;
+  }
 }
 
 .footer-subscribe__label {
@@ -1003,6 +1021,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__mail-section {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
 
 .footer-subscribe__input {
   width: 100%;
@@ -1016,6 +1040,11 @@ body {
   background-color: #2F303A;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__input {
+    width: 358px;
+  }
 }
 
 .footer-subscribe__button {
@@ -1034,6 +1063,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__button {
+    margin-left: 12px;
+  }
 }
 
 .footer-subscribe__icon {

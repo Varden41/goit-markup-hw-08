@@ -17,6 +17,7 @@
     @media screen and (min-width: 1200px) {
         align-items: baseline;
         flex-wrap: nowrap;
+       
     }
 }
 
@@ -36,8 +37,9 @@
         margin-right: 165px;
     }
     @media screen and (min-width: 1200px) {
-        margin-right: 70px;
+        margin-right: 0;
         display: block;
+
     }
 }
 
