@@ -10,6 +10,15 @@
     color: $additionat-text-color;
     background-color: $background-color-special ;
     text-align: center;
+    @media screen and (max-width: 1199px) {
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+        
+    @media screen and (min-width: $desktop) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
 
 }
 
@@ -53,18 +62,10 @@
     }
 }
 
-.container--head-box {
+// .container--head-box {
         
-        @media screen and (max-width: 1199px) {
-            padding-top: 118px;
-            padding-bottom: 118px;
-        }
-        
-        @media screen and (min-width: $desktop) {
-            padding-top: 200px;
-            padding-bottom: 200px;
-        }
-}
+
+// }
 
 .head__title {
     margin-bottom: 30px;
