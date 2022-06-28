@@ -1,22 +1,59 @@
 .head {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/head.jpg);
+        url(../images/head/header-img-mobile.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1600px;
-    // height: 600px;
     margin-inline: auto;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
 
     color: $additionat-text-color;
     background-color: $background-color-special ;
     text-align: center;
 
 }
+
+@media  (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .head {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/head/header-img-mobile@2x.jpg);
+    }
+}
+
+@media (min-width: 481px) {
+    .head {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/head/header-img-tablet.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .head {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/head/header-img-tablet@2x.jpg);
+            }
+        }
+}
+
+@media (min-width: 769px) {
+    .head {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/head/header-img-desktop.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .head {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/head/header-img-desktop@2x.jpg);
+            }
+    }
+}
+
 .container--head-box {
-    // padding-top: 200px;
-    // padding-bottom: 200px;
         
         @media screen and (max-width: 1199px) {
             padding-top: 118px;
@@ -24,7 +61,6 @@
         }
         
         @media screen and (min-width: $desktop) {
-            // height: 600px;
             padding-top: 200px;
             padding-bottom: 200px;
         }
@@ -32,11 +68,7 @@
 
 .head__title {
     margin-bottom: 30px;
-
     font-weight: 900;
-    
-    // font-size: 44px;
-    // line-height: 1.36;
 
     text-align: center;
     text-transform: uppercase;

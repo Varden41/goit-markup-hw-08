@@ -328,7 +328,8 @@ body.modal-open {
 }
 
 .head {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/header-img-mobile.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
@@ -338,6 +339,31 @@ body.modal-open {
   text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .head {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/header-img-mobile@2x.jpg);
+  }
+}
+@media (min-width: 481px) {
+  .head {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/header-img-tablet.jpg);
+  }
+}
+@media (min-width: 481px) and (min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 192dpi), (min-width: 481px) and (min-resolution: 2dppx) {
+  .head {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/header-img-tablet@2x.jpg);
+  }
+}
+@media (min-width: 769px) {
+  .head {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/header-img-desktop.jpg);
+  }
+}
+@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
+  .head {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/header-img-desktop@2x.jpg);
+  }
+}
 @media screen and (max-width: 1199px) {
   .container--head-box {
     padding-top: 118px;
@@ -605,6 +631,11 @@ body.modal-open {
   padding-top: 30px;
   padding-bottom: 24px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .our-team__teammate-box {
+    padding-bottom: 30px;
+  }
 }
 
 .our-team__name {
@@ -1376,13 +1407,13 @@ body.modal-open {
 
 .projects__hover-box {
   position: relative;
-  display: flex;
   overflow: hidden;
 }
 
 .projects__hover-box-img {
   display: block;
   width: calc(100vw - 30px);
+  max-width: 450px;
   height: auto;
   max-height: 294px;
 }

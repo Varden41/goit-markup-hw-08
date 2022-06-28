@@ -49,17 +49,19 @@
 
 .projects__hover-box {
     position: relative;
-    display: flex;
+    // display: flex;
     overflow: hidden;
 }
 
 .projects__hover-box-img {
     display: block;
     width: calc(100vw - 30px);
+    max-width: 450px;
     height: auto;
     max-height: 294px;
     @media screen and (min-width: $tablet) {
         width: 100%;
+        
     }
 }
 
