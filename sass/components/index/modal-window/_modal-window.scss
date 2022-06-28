@@ -1,7 +1,8 @@
 /* Modal window */
 
 .modal-window {
-    width: 450px;
+    max-width: 450px;
+    width: calc(100% - 30px);
     position: absolute;
     padding: 40px;
     top: 50%;
@@ -17,7 +18,8 @@
     background-color: $background-color;
 
     @media screen and (min-width: $desktop) {
-        width: 528px;
+        max-width: 528px;
+        
     }
 }
 
@@ -44,10 +46,13 @@
     }
 }
 
-
+.modal-window__form {
+    display: flex;
+    flex-direction: column;
+}
 
 .modal-window__title {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 
     color: $title-text-color;
     font-weight: 700;
@@ -61,23 +66,32 @@
 }
 
 .modal-window__label {
-    display: block;
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 0;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: color;
+
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
+
 }
 
 .modal-window__input-box {
     display: flex;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
     display: flex;
     height: 40px;
     align-items: center;
     &:focus-within {
         fill: $button-bg-color;
+
     }
+
 }
 
 .modal-window__input {
@@ -93,6 +107,12 @@
     &:focus {
         border-color: $button-bg-color;
     }
+    @media screen and (max-width: 767px) {
+        &:focus + .modal-window__label {
+            color: $accent-text-color;
+        }
+    }
+    
 }
 
 
@@ -137,6 +157,11 @@
     }
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
+    }
+    @media screen and (max-width: 767px) {
+        &:focus + .modal-window__label {
+            color: $accent-text-color;
+        }
     }
      @media screen and (min-width: $desktop) {
         font-size: 12px;

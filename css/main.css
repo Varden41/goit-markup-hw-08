@@ -759,7 +759,8 @@ body.modal-open {
 
 /* Modal window */
 .modal-window {
-  width: 450px;
+  max-width: 450px;
+  width: calc(100% - 30px);
   position: absolute;
   padding: 40px;
   top: 50%;
@@ -772,7 +773,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .modal-window {
-    width: 528px;
+    max-width: 528px;
   }
 }
 
@@ -798,8 +799,13 @@ body.modal-open {
   fill: #2196F3;
 }
 
+.modal-window__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-window__title {
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
   font-size: 20px;
@@ -814,7 +820,12 @@ body.modal-open {
 }
 
 .modal-window__label {
-  display: block;
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -824,7 +835,7 @@ body.modal-open {
 .modal-window__input-box {
   display: flex;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   display: flex;
   height: 40px;
   align-items: center;
@@ -846,6 +857,11 @@ body.modal-open {
 }
 .modal-window__input:focus {
   border-color: #2196F3;
+}
+@media screen and (max-width: 767px) {
+  .modal-window__input:focus + .modal-window__label {
+    color: #2196F3;
+  }
 }
 
 .modal-window__icon {
@@ -885,6 +901,11 @@ body.modal-open {
 }
 .modal-window__comments::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (max-width: 767px) {
+  .modal-window__comments:focus + .modal-window__label {
+    color: #2196F3;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-window__comments {
