@@ -83,6 +83,8 @@ body.modal-open {
     background-color: #ffffff;
     overflow-y: scroll;
     padding: 48px 40px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 767px) {
@@ -193,6 +195,11 @@ body.modal-open {
     padding-bottom: 32px;
   }
 }
+@media screen and (max-width: 479px) {
+  .header-nav__navigation_link {
+    font-size: 30px;
+  }
+}
 .header-nav__navigation_link:hover, .header-nav__navigation_link:focus {
   color: #2196F3;
 }
@@ -228,8 +235,6 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .header-contacts {
-    margin-top: 302px;
-    margin-bottom: 64px;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
@@ -242,6 +247,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .header-contacts__item:last-child .header-contacts__link {
+    font-size: 24px;
+    color: #2196F3;
+  }
+}
 @media screen and (max-width: 767px) {
   .header-contacts__item:not(:first-child) {
     margin-bottom: 32px;
@@ -252,7 +263,7 @@ body.modal-open {
     margin-left: 30px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header-contacts__item:last-child .header-contacts__link {
     font-weight: 500;
     font-size: 34px;
@@ -325,6 +336,11 @@ body.modal-open {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (max-width: 479px) {
+  .header-social__link {
+    font-size: 10px;
+  }
 }
 
 .head {
@@ -771,6 +787,7 @@ body.modal-open {
 }
 
 .backdrop {
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -1424,6 +1441,9 @@ body.modal-open {
 }
 
 .projects__hover-box-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   margin: 0;
   width: 100%;
@@ -1444,6 +1464,11 @@ body.modal-open {
 .projects__link:hover .projects__hover-box-text, .projects__link:focus .projects__hover-box-text {
   opacity: 1;
   transform: translateY(-100%);
+}
+@media screen and (max-width: 479px) {
+  .projects__hover-box-text {
+    font-size: 14px;
+  }
 }
 
 .projects__title-box {

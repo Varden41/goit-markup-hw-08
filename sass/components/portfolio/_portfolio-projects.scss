@@ -66,6 +66,9 @@
 }
 
 .projects__hover-box-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     margin: 0;
     width: 100%;
@@ -88,6 +91,9 @@
         opacity: 1;
         transform: translateY(-100%);
     }
+     @media screen and (max-width: 479px) {
+        font-size: 14px;
+     }
 }
 
 
